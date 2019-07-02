@@ -1,0 +1,10 @@
+version: "3"
+services:
+  nodejs_executable_docker:
+    # Required when 'extending' the existing docker-compose.yml. Same value(s).
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # Adding this overrides the default Dockerfile CMD. Building the image with this means we can use VSCode to debug in the container.
+    # As we're overriding the defualt CMD here, we then need to pass in the default param(s) that we're overriding from the Dockerfile, via the 'args' key/value in launch.json.
+    command: sleep infinity

@@ -1,0 +1,19 @@
+version: "3"
+services:
+  nodejs_executable_docker:
+    # Define configuration for building the nodejs_executable_docker 'service' container.
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # This works with 'build' to create image, if not existing, to build new image from 'build' config.
+    # If 'build' is not present, will try and pull an image with the specified name.
+    # See https://docs.docker.com/compose/compose-file/#image 
+    image: alexsansom/nodejs_executable_docker
+    # Specifying a container_name stops ability to use more than one of a container at a time as each container needs to have a unique name.
+    # As we're using the container 'as an executable', this is fine, we don't want more than one version of the 'executable'. 
+    container_name: nodejs_executable_docker
+    #
+    # Mount a host (the Mac) filesystem path to a container path (which is used, for this example, as the WORKDIR in the Dockerfile).
+    # This is being defined at this 'service' level, but can be defined at top level, for use across other services.
+    volumes:
+      - .:/app

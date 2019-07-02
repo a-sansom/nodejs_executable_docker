@@ -1,0 +1,9 @@
+{
+	"dockerComposeFile": [
+        "docker-compose.yml",
+        "docker-compose.extend.yml"
+    ],
+    "service": "nodejs_executable_docker",
+    "workspaceFolder": "/app",
+    "extensions": []
+}
