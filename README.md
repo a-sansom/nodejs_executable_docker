@@ -1,5 +1,7 @@
 # Using Docker containers with Node.js script 'as an executable'
 
+(See also ["Using Docker containers with Node.js/express"](https://github.com/a-sansom/nodejs_docker)).
+
 This is just an experimental repository for seeing what's possible with Docker (`Dockerfile` and `docker-compose.yml`
 that references the `Dockerfile`) and VS Code and PHPStorm IDEs for development/debugging purposes of a Node.js script,
 so a Docker container runs the script as if it was an executable command on the host system.
