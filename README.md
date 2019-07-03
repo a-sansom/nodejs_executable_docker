@@ -62,4 +62,4 @@ With this simple setup, you don't seem to be able to use the `Application parame
 `docker-compose run --rm nodejs_executable_docker 10` (May be a bug? It seems that this functionality is possibly
 quite new, going by a Jetbrains blog [1]).
 
-[1] [WebStorm 2019.1 EAP #7: run Node.js using Docker Compose, Recent Locations popup]()https://blog.jetbrains.com/webstorm/2019/03/webstorm-2019-1-eap-7/)
+[1] [WebStorm 2019.1 EAP #7: run Node.js using Docker Compose, Recent Locations popup](https://blog.jetbrains.com/webstorm/2019/03/webstorm-2019-1-eap-7/)
