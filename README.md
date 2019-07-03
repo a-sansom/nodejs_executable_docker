@@ -22,6 +22,11 @@ times (5, by default).
 
 ## Step debugging 'docker as an executable' Node.js script using Dockerfile/docker-compose.* and VS Code
 
+Included in this repository is the file `.vscode/extensions.json`. When this directory is opened in VS Code, because of
+this file, a dialogue offering to install the extensions listed in the file will appear, which you should accept. The
+extensions installed are related to Docker and remote debugging, which are needed for step debugging in a Docker
+container.
+
 To achieve step debugging of the `simple-script-example.js` script with VS code, we need to create a second Docker
 compose file `docker-compose.extend.yml` with a `command` that overrides the default `CMD` in the `Dockerfile`, and then
 create a `.devcontainer.json` project file that references both the `docker-compose.yml` and the
