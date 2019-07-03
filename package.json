@@ -1,0 +1,19 @@
+{
+  "name": "nodejs_executable_docker",
+  "version": "1.0.0",
+  "description": "Using Docker containers with Node.js script 'as an executable'",
+  "main": "simple-script-example.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a-sansom/nodejs_executable_docker.git"
+  },
+  "author": "Alex Sansom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a-sansom/nodejs_executable_docker/issues"
+  },
+  "homepage": "https://github.com/a-sansom/nodejs_executable_docker#readme"
+}
