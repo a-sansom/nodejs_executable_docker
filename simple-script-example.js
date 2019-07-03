@@ -7,7 +7,7 @@ let iterate_to = process.argv[2];
 console.log('Number of iterations: ' + iterate_to);
 
 setInterval(() => {
-    // We're checking equality, not strict eqauality as we (in this basic
+    // We're checking equality, not strict equality as we (in this basic
     // example) are getting the input param as a string.
     if (i > iterate_to) {
         console.log('Completed required number of iterations, exiting...');

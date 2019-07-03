@@ -38,7 +38,7 @@ WORKDIR /app
 ENTRYPOINT ["node", "simple-script-example.js"]
 
 # Default to count to. By specify both ENTRYPOINT and CMD here the default command
-# that gets run is 'nodemon simple-script-example.js 10', as both directives are
+# that gets run is 'node simple-script-example.js 5', as both directives are
 # supplied in the 'exec form' (using parenthesis), not the 'shell form'.
 #
 # https://docs.docker.com/engine/reference/builder/#understand-how-cmd-and-entrypoint-interact
