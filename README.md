@@ -59,4 +59,7 @@ able to use that option directly in the `docker-compose.yml` file either.
 
 With this simple setup, you don't seem to be able to use the `Application parameters` field to override the default
 `Dockerfile`'s `CMD` value. You can override that value on the CLI though, for example
-`docker-compose run --rm nodejs_executable_docker 10`.
+`docker-compose run --rm nodejs_executable_docker 10` (May be a bug? It seems that this functionality is possibly
+quite new, going by a Jetbrains blog [1]).
+
+[1] [WebStorm 2019.1 EAP #7: run Node.js using Docker Compose, Recent Locations popup]()https://blog.jetbrains.com/webstorm/2019/03/webstorm-2019-1-eap-7/)
